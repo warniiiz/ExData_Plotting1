@@ -19,7 +19,7 @@ twoDaysData$Time <- strptime(paste(twoDaysData$Date, twoDaysData$Time, sep = " "
 twoDaysData$Date <- as.Date(twoDaysData$Date, format = "%d/%m/%Y")
 
 ## plotting plot1.png
-png(filename = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
+png(filename = "plot1.png", width = 480, height = 480, units = "px")
 hist(twoDaysData$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main ="Global Active Power")
 
 # Close the PNG file

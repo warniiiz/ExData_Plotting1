@@ -19,7 +19,7 @@ twoDaysData$Time <- strptime(paste(twoDaysData$Date, twoDaysData$Time, sep = " "
 twoDaysData$Date <- as.Date(twoDaysData$Date, format = "%d/%m/%Y")
 
 # plotting plot3.png
-png(filename = "plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
+png(filename = "plot3.png", width = 480, height = 480, units = "px")
 
 # plotting the lines one by one...
 plot(twoDaysData$Time, twoDaysData$Sub_metering_1, type = "l", col = "black", xaxt = "n", xlab = "", ylab = "Energy sub metering")

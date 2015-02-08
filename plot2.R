@@ -19,7 +19,7 @@ twoDaysData$Time <- strptime(paste(twoDaysData$Date, twoDaysData$Time, sep = " "
 twoDaysData$Date <- as.Date(twoDaysData$Date, format = "%d/%m/%Y")
 
 # plotting plot2.png
-png(filename = "plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
+png(filename = "plot2.png", width = 480, height = 480, units = "px")
 plot(twoDaysData$Time, twoDaysData$Global_active_power, type = "l", col = "black", xaxt = "n", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 # Because French system automatically converts day names in French, 

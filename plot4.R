@@ -19,7 +19,7 @@ twoDaysData$Time <- strptime(paste(twoDaysData$Date, twoDaysData$Time, sep = " "
 twoDaysData$Date <- as.Date(twoDaysData$Date, format = "%d/%m/%Y")
 
 # plotting plot4.png
-png(filename = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
+png(filename = "plot4.png", width = 480, height = 480, units = "px")
 par(mfrow = c(2,2))
 
 # plotting the graphs one by one... reusing previous works
